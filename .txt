@@ -1,0 +1,2 @@
+for install expo app load for when we use Hook of loading in google fonts
+->expo install expo-app-loading 

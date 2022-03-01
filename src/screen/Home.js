@@ -60,12 +60,14 @@ const styles = StyleSheet.create({
     textTransform:'uppercase',
     fontSize:30,
     color:'#344055',
+    fontFamily:'Nunito_700Bold'
   },
   para:{
       marginTop:30,
       lineHeight:26,
       paddingBottom:50,
       textAlign:'left',
+      fontFamily:"Nunito_600SemiBold",
   },
   mainMenu:{
 

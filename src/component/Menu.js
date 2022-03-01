@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { useNavigation, useNavigationState } from '@react-navigation/native'
 import Course from '../screen/Course';
@@ -12,31 +12,51 @@ const Menu = () => {
             style={styles.button}
             onPress={() =>navigation.navigate("Course") }
         >
-            <Text>Course</Text>
+            <Image
+            style={styles.iconStyle}
+            source={require('../../assets/course.png')}
+            
+            />
         </TouchableOpacity>
         <TouchableOpacity
             style={styles.button}
             onPress={() =>navigation.navigate("About") }
         >
-            <Text>About</Text>
+        <Image
+        style={styles.iconStyle}
+        source={require('../../assets/about.png')}
+        
+        />
         </TouchableOpacity>
         <TouchableOpacity
             style={styles.button}
             onPress={() =>navigation.navigate("Contact") }
         >
-            <Text>Contact</Text>
+        <Image
+            style={styles.iconStyle}
+            source={require('../../assets/contact.png')}
+            
+            />
         </TouchableOpacity>
         <TouchableOpacity
             style={styles.button}
             onPress={() =>navigation.navigate("UserData") }
         >
-            <Text>UserData</Text>
+        <Image
+        style={styles.iconStyle}
+        source={require('../../assets/userdata.png')}
+        
+        />
         </TouchableOpacity>
         <TouchableOpacity
             style={styles.button}
             onPress={() =>navigation.navigate("Student") }
         >
-            <Text>Student</Text>
+        <Image
+        style={styles.iconStyle}
+        source={require('../../assets/student.png')}
+        
+        />
         </TouchableOpacity>
     </View>
   )
@@ -49,5 +69,9 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-evenly',
     },
-    
+    iconStyle:{
+        width:"100%",
+        height:40,
+        aspectRatio:1,
+    }
 })
