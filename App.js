@@ -23,6 +23,7 @@ import {
   Nunito_700Bold,
 
 } from '@expo-google-fonts/nunito'
+import CourseDetails from './src/screen/CourseDetails';
 
 
 const Stack = createNativeStackNavigator();
@@ -100,6 +101,15 @@ const App = () => {
           />
           {/* Studetn Screens */}
           <Stack.Screen name="Student" component={Student}
+            options={{
+              headerTitleStyle: {
+                fontSize: 25,
+              },
+              headerTitleAlign: 'center',
+            }}
+          />
+          {/* Course Details */}
+          <Stack.Screen name="CourseDetails" component={CourseDetails}
             options={{
               headerTitleStyle: {
                 fontSize: 25,
