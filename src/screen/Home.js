@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import Menu from '../component/Menu';
 
 
 export default function Home() {
@@ -22,6 +23,13 @@ export default function Home() {
 
             <Text style={styles.para}>{description}</Text>
 
+        </View>
+        <View style={styles.mainMenu}>
+            <View style={styles.line}></View>
+            <Menu />
+            <View style={[styles.line,{
+                marginVertical:20,
+            }]}></View>
         </View>
     </View>
   );
@@ -59,4 +67,12 @@ const styles = StyleSheet.create({
       paddingBottom:50,
       textAlign:'left',
   },
+  mainMenu:{
+
+  },
+  line:{
+    marginBottom:20,
+    borderWidth:0.5,
+    borderColor:'grey',
+  }
 })
